@@ -59,6 +59,12 @@ Runtime dependencies are kept minimal: [`bortlefinder`](https://pypi.org/project
 earlier coordinate-based Bortle estimation and published standalone) and
 `timezonefinder` (coordinates -> IANA timezone, for local-time display).
 
+## Install
+
+```
+pip install meteor-shower-forecast
+```
+
 ## Usage
 
 With just coordinates, the CLI reports the next upcoming shower, evaluated
@@ -74,7 +80,7 @@ shown in local time with the 3-letter timezone abbreviation (EDT, PST,
 JST, ...) looked up from the coordinates:
 
 ```
-uv run meteor-shower-forecast --lat 35.7796 --lon -78.6382
+meteor-shower-forecast --lat 35.7796 --lon -78.6382
 ```
 
 ```
@@ -101,7 +107,7 @@ hours later, once the radiant has climbed well clear of the horizon, the
 same shower produces over five times the rate:
 
 ```
-uv run meteor-shower-forecast --lat 35.0 --lon -78.6 --shower Quadrantids
+meteor-shower-forecast --lat 35.0 --lon -78.6 --shower Quadrantids
 ```
 
 ```
@@ -123,7 +129,7 @@ year's best time, unlike `--when`, which pins one exact instant (the two
 are mutually exclusive):
 
 ```
-uv run meteor-shower-forecast --lat 35.0 --lon -78.6 --shower Quadrantids --year 2020
+meteor-shower-forecast --lat 35.0 --lon -78.6 --shower Quadrantids --year 2020
 ```
 
 `--shower NAME` without `--when` works the same way: it searches that
@@ -136,7 +142,7 @@ Override the automatic moon estimate, or pass 0 to ignore moonlight
 entirely:
 
 ```
-uv run meteor-shower-forecast --lat 35.0 --lon -78.6 \
+meteor-shower-forecast --lat 35.0 --lon -78.6 \
   --shower Perseids --when 2026-08-12T05:00:00 --moon-illumination 80
 ```
 
@@ -145,7 +151,7 @@ upcoming observing time, sorted chronologically by (catalog) peak date
 (pass `--when` to instead compare what's active on one specific night):
 
 ```
-uv run meteor-shower-forecast --lat 35.0 --lon -78.6 --shower all
+meteor-shower-forecast --lat 35.0 --lon -78.6 --shower all
 ```
 
 Pass `--bortle <1-9>` or `--sqm <value>` to override the coordinate-based
@@ -158,7 +164,7 @@ IAU code and parent body when known; look one up by name, prefix, or IAU
 code -- e.g. `--shower SDA`):
 
 ```
-uv run meteor-shower-forecast --list-showers
+meteor-shower-forecast --list-showers
 ```
 
 ```
@@ -192,8 +198,8 @@ CC BY-NC 4.0). Fetch it once (downloads ~684MB, reduced to a ~19MB local
 grid; needs the `build` extra):
 
 ```
-uv sync --extra build
-uv run bortlefinder-fetch-grid
+pip install meteor-shower-forecast[build]
+bortlefinder-fetch-grid
 ```
 
 This derivation is approximate: satellite atlases measure *zenith*
@@ -249,3 +255,15 @@ past = estimate_shower_rate(
 )
 print(past.when_utc, past.estimated_rate_per_hour)
 ```
+
+## Development
+
+```
+git clone https://github.com/rtphokie/meteor-shower-forecast
+cd meteor-shower-forecast
+uv sync
+```
+
+The shower catalog (`src/meteor_shower_forecast/data/shower_catalog.csv`)
+is generated, not hand-edited -- see `scripts/build_shower_catalog.py`'s
+docstring to regenerate it from a newer IMO calendar or updated GMN data.
