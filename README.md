@@ -194,8 +194,10 @@ By default, sky brightness is derived from `--lat`/`--lon` via the
 reads a small, locally-fetched grid based on the Falchi et al. (2016)
 *New World Atlas of Artificial Night Sky Brightness*
 ([doi.org/10.5880/GFZ.1.4.2016.001](https://doi.org/10.5880/GFZ.1.4.2016.001),
-CC BY-NC 4.0). Fetch it once (downloads ~684MB, reduced to a ~19MB local
-grid; needs the `build` extra):
+CC BY-NC 4.0) -- built primarily from the VIIRS Day/Night Band instrument
+aboard the Suomi NPP satellite (a joint NASA/NOAA mission). Fetch it once
+(downloads ~684MB, reduced to a ~19MB local grid; needs the `build`
+extra):
 
 ```
 pip install meteor-shower-forecast[build]
