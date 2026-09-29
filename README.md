@@ -96,7 +96,7 @@ Orionids (ORI)
 
 This matters most when the catalog peak itself is a bad time to look --
 e.g. the Quadrantids' 2027 peak falls with the radiant just below the
-horizon from North Carolina (an estimated 3.4 meteors/hour), but a few
+horizon from this location (an estimated 3.4 meteors/hour), but a few
 hours later, once the radiant has climbed well clear of the horizon, the
 same shower produces over five times the rate:
 
