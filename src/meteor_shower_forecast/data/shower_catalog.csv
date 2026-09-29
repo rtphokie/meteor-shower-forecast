@@ -1,0 +1,39 @@
+name,iau_code,iau_number,radiant_ra_deg,radiant_dec_deg,peak_month,peak_day,peak_hour_utc,parent_body,peak_zhr,population_index,b_rise,b_decline
+Quadrantids,QUA,10,230.0,49.0,1,4,0.35,2003 EH1,80.0,2.1,0.865,0.827
+gamma-Ursae Minorids,GUM,404,228.0,67.0,1,18,14.14,,3.0,3.0,,
+alpha-Centaurids,ACE,102,211.0,-58.0,2,8,15.71,,6.0,2.0,,
+April Lyrids,LYR,6,271.0,34.0,4,22,16.32,C/1861 G1 (Thatcher),18.0,2.1,1.229,4.62
+pi-Puppids,PPU,137,110.0,-45.0,4,23,21.37,26P/Grigg-Skjellerup,,2.0,,
+eta-Aquariids,ETA,31,338.0,-1.0,5,6,5.77,1P/Halley,50.0,2.4,0.125,0.079
+eta-Lyrids,ELY,145,291.0,43.0,5,10,21.38,C/1983 H1 (IRAS-Araki-Alcock),3.0,3.0,,
+Daytime Arietids,ARI,171,43.0,24.0,6,7,16.02,P/1999 J6 (SOHO),30.0,2.8,0.065,0.055
+June Bootids,JBO,170,221.0,48.0,6,21,21.66,7P/Pons-Winnecke,,2.2,,
+July Pegasids,JPE,175,347.0,11.0,7,10,11.11,C?1979 Y1 (Bradfield),3.0,3.0,,
+July gamma-Draconids,GDR,184,280.0,51.0,7,28,9.88,C/1919 q2 (Metcalf),5.0,3.0,,
+alpha-Capricornids,CAP,1,307.0,-10.0,7,31,9.93,169P/NEAT,5.0,2.5,0.059,0.091
+Southern delta-Aquariids,SDA,5,340.0,-16.0,7,31,9.93,342P/SOHO,25.0,2.5,0.109,0.071
+eta-Eridanids,ERI,191,41.0,-11.0,8,7,17.44,C/1852 K1 (Chacornac),3.0,3.0,,
+Perseids,PER,7,48.0,58.0,8,12,22.57,109P/Swift-Tuttle,110.0,2.2,0.35,0.35
+kappa-Cygnids,KCG,12,286.0,59.0,8,17,2.52,2021 HK12,3.0,3.0,0.069,0.069
+Aurigids,AUR,206,91.0,39.0,9,1,5.94,C/1911 N1 (Kiess),6.0,2.5,0.19,0.19
+September epsilon-Perseids,SPE,208,48.0,40.0,9,9,14.5,,8.0,2.5,0.193,0.193
+September Lyncids,SLY,81,113.0,56.0,9,12,23.96,,3.0,3.0,,
+Daytime Sextantids,DSX,221,156.0,-2.0,10,1,9.72,2005 UD,5.0,2.5,0.063,0.167
+October Camelopardalids,OCT,281,164.0,79.0,10,6,1.4,,5.0,2.5,,
+Draconids,DRA,9,263.0,56.0,10,8,22.01,21P/Giacobini-Zinner,5.0,2.6,7.225,7.225
+epsilon-Geminids,EGE,23,102.0,27.0,10,18,14.75,,3.0,3.0,,
+Orionids,ORI,8,95.0,16.0,10,21,15.22,1P/Halley,20.0,2.5,0.12,0.119
+Leonis Minorids,LMI,22,162.0,37.0,10,24,15.57,C/1739 K1 (Zanotti),2.0,3.0,0.093,0.079
+Southern Taurids,STA,2,52.0,15.0,11,5,15.78,2P/Encke,7.0,2.3,0.026,0.026
+Northern Taurids,NTA,17,58.0,22.0,11,12,15.09,2P/Encke,5.0,2.3,0.026,0.026
+Leonids,LEO,13,152.0,22.0,11,17,20.7,55P/Tempel-Tuttle,15.0,2.5,0.55,0.55
+alpha-Monocerotids,AMO,246,117.0,1.0,11,21,21.03,,,2.4,,
+November Orionids,NOO,250,91.0,16.0,11,28,11.58,,3.0,3.0,,
+Phoenicids,PHO,254,8.0,-27.0,12,1,22.5,D/1819 W1 (Blanpain) /2003 WY25,,2.8,,
+Andromedids,AND,18,25.0,51.0,12,6,8.98,3D/Biela,5.0,3.0,,
+Puppid-Velids,PUP,301,123.0,-45.0,12,7,8.63,,10.0,2.9,,
+Monocerotids,MON,19,100.0,8.0,12,9,7.89,C/1917 F1 (Mellish),3.0,3.0,0.25,0.25
+sigma-Hydrids,HYD,16,125.0,2.0,12,9,7.89,C/2023 P1 (Nishimura),7.0,3.0,0.1,0.1
+Geminids,GEM,4,112.0,33.0,12,14,10.68,3200 Phaethon,150.0,2.6,0.15,0.462
+Ursids,URS,15,217.0,76.0,12,22,19.12,8P/Tuttle,10.0,2.8,2.292,1.258
+Comae Berenicids,COM,20,164.0,29.0,12,23,2.19,,3.0,3.0,,

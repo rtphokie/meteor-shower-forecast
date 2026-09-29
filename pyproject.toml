@@ -1,0 +1,25 @@
+[project]
+name = "meteor-shower-forecast"
+version = "0.1.0"
+description = "Realistic per-location meteor-shower rate estimates from Bortle class and radiant altitude"
+readme = "README.md"
+authors = [
+    { name = "trice", email = "rtphokie@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "bortlefinder>=0.2.0",
+    "timezonefinder>=6.5",
+]
+
+[project.optional-dependencies]
+# Only needed for `bortlefinder-fetch-grid`, the one-time light-pollution
+# grid fetch (see README).
+build = ["bortlefinder[build]"]
+
+[project.scripts]
+meteor-shower-forecast = "meteor_shower_forecast:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"

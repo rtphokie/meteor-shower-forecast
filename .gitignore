@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# IDE
+.idea/
+
+# Build scratch space (e.g. scripts/build_shower_catalog.py's cached IAU
+# MDC download).
+.cache/
