@@ -68,9 +68,6 @@ class ShowerDef:
         return None not in (self.peak_zhr, self.population_index, self.b_rise, self.b_decline)
 
 
-SHOWERS: list[ShowerDef] = []  # populated below by _load()
-
-
 def _load() -> list[ShowerDef]:
     from importlib import resources
 

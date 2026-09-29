@@ -1,10 +1,8 @@
 """Meteor-specific sky-brightness helper: scattered-moonlight sky glow.
 
-Bortle<->SQM conversion and naked-eye-limiting-magnitude are no longer
-defined here -- they live in the `bortlefinder` package (PyPI), extracted
-from this project's own earlier coordinate-based Bortle estimation. This
-module keeps only what's specific to meteor rate estimation and isn't part
-of bortlefinder's scope: how much a given moon illumination brightens the
+Bortle<->SQM conversion and naked-eye-limiting-magnitude live in the
+`bortlefinder` package (PyPI); this module holds only what's specific to
+meteor rate estimation: how much a given moon illumination brightens the
 sky, adapted from the DarkHours project (mbeher2200/DarkHours,
 darkhours/moonlight.py), MIT licensed:
 

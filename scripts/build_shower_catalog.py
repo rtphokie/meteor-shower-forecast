@@ -146,15 +146,12 @@ IMO_POPULATION_INDEX = {
 # (Bp, Bm) per code, transcribed verbatim from GMN's flux_showers.csv
 # "NASA meteoroid Environment Office" section (see module docstring) --
 # these become b_rise/b_decline directly (GMN's Bp/Bm are per degree of
-# solar longitude; this package already treats that as per-day, ~1.5%
-# error most of the year, per effective_zhr's own documented caveat --
-# the same approximation this data's original DarkHours transcription
-# made, which is how eleven of these values were already in use here
-# before this GMN cross-check). Two showers in GMN's list (Southern mu
-# Sagittariids/SSG, Piscis Austrinids/PAU) aren't on the IMO Working List
-# this catalog is otherwise built from, so they're omitted -- they'd have
-# no effect (GMN_DECAY_RATES is looked up by code, missing keys are fine)
-# but there's no point carrying them.
+# solar longitude; this package treats that as per-day, ~1.5% error most
+# of the year, per effective_zhr's own documented caveat). Two showers in
+# GMN's list (Southern mu Sagittariids/SSG, Piscis Austrinids/PAU) aren't
+# on the IMO Working List this catalog is otherwise built from, so they're
+# omitted -- GMN_DECAY_RATES is looked up by code, so missing keys are
+# harmless, but there's no point carrying entries that can never match.
 #
 # A GMN Bm of exactly 0 means "symmetric activity, reuse Bp" (their own
 # fallback in Shower.computeZHRFloat) rather than "no decline" -- applied
